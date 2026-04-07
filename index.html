@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Jha | Senior BI Architect & AI Data Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #4ade80); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .project-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 1px solid rgba(255,255,255,0.05); }
+        .project-card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 20px 40px -20px rgba(59, 130, 246, 0.3); }
+        .tag { background: rgba(59, 130, 246, 0.1); color: #60a5fa; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .ai-badge { background: linear-gradient(90deg, #4f46e5, #7c3aed); color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        
+        /* Gallery Specific Styles */
+        .gallery-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .snap-box { position: relative; border-radius: 1rem; overflow: hidden; height: 250px; background: #1e293b; border: 1px solid rgba(255,255,255,0.1); }
+        .snap-box img { width: 100%; height: 100%; object-fit: cover; transition: all 0.5s ease; opacity: 0.7; filter: grayscale(20%); }
+        .snap-box:hover img { transform: scale(1.1); opacity: 1; filter: grayscale(0%); }
+        .snap-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(2,6,23,0.9), transparent); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.5rem; }
+        .snap-box:hover .snap-overlay { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter italic">KESHAV<span class="text-blue-500">JHA</span></div>
+            <div class="space-x-8 text-sm font-medium hidden md:flex">
+                <a href="#gallery" class="hover:text-blue-400 transition">Showcase</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Case Studies</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Stack</a>
+                <a href="mailto:Keshavjhabca006@gmail.com" class="bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 transition">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-48 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <span class="px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest border border-blue-500/20">30 Day Notice Period</span>
+            <h1 class="text-6xl md:text-8xl font-extrabold mt-8 mb-6 tracking-tighter italic">BI ARCHITECT<span class="text-blue-500">.</span></h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                6+ Years of Experience | **100+ Enterprise Dashboards** | Leveraging AI to deliver high-velocity data insights for global giants like Unilever & Marico.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#gallery" class="bg-white text-black px-10 py-4 rounded-full font-bold hover:bg-blue-50 transition">View Dashboard Snaps</a>
+                <a href="https://linkedin.com/in/keshavbhardwaj-67b525161" target="_blank" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/5 transition">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 px-6 bg-slate-900/10">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 italic uppercase tracking-tighter">Visual Showcase</h2>
+                <p class="text-slate-500">Interactive snapshots of my latest BI solutions. *Data anonymized for confidentiality.</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="snap-box">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbb653c0d730?w=800" alt="EPOS Sales Report">
+                    <div class="snap-overlay">
+                        <div>
+                            <p class="text-blue-400 font-bold text-xs mb-1">EPOS SALES PERFORMANCE</p>
+                            <h4 class="text-white font-bold">Granular SKU Tracking</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-box">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Supply Chain Audit">
+                    <div class="snap-overlay">
+                        <div>
+                            <p class="text-green-400 font-bold text-xs mb-1">SUPPLY CHAIN AUDIT</p>
+                            <h4 class="text-white font-bold">Real-time KPI Tracking</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-box">
+                    <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=800" alt="User Engagement">
+                    <div class="snap-overlay">
+                        <div>
+                            <p class="text-purple-400 font-bold text-xs mb-1">USER ENGAGEMENT</p>
+                            <h4 class="text-white font-bold">Funnel & Behavior Metrics</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-10 text-slate-600 text-xs italic">Hover over images to view project focus</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Strategic Case Studies</h2>
+                <p class="text-slate-400">Deep-dive into the AI-augmented architecture behind my solutions.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="project-card glass rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="ai-badge">AI-AUDITED DAX</span>
+                            <span class="tag">Enterprise BI</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 italic">EPOS Sales Architect</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Engineered a comprehensive report writing **300+ DAX measures**. Used **AI-assisted refactoring** to ensure sub-second response times across SKU and regional hierarchies.
+                        </p>
+                    </div>
+                    <div class="text-[10px] text-slate-500 font-mono italic pt-4 border-t border-white/5 uppercase">
+                        Power BI • SQL • Leaflet ROI
+                    </div>
+                </div>
+
+                <div class="project-card glass rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="ai-badge">AI SQL OPTIMIZER</span>
+                            <span class="tag">Data Engineering</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 italic">BigQuery ETL Automation</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Built robust ETL pipelines saving **15+ hours per week**. Implemented **AI-driven SQL optimization** to reduce cloud processing costs and ingest data from multiple retail sources.
+                        </p>
+                    </div>
+                    <div class="text-[10px] text-slate-500 font-mono italic pt-4 border-t border-white/5 uppercase">
+                        Google BigQuery • Stored Procedures • ETL
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 bg-slate-900/20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-10 uppercase tracking-widest text-slate-500">Technical Arsenal</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">Power BI</span>
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">SQL / BigQuery</span>
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">Python</span>
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">Azure Data Factory</span>
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">DAX / M Language</span>
+                <span class="px-5 py-2 glass rounded-xl text-xs font-bold">Gen AI Integration</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 text-center px-6">
+        <h2 class="text-3xl font-bold mb-8 italic">READY TO JOIN IN <span class="text-blue-500 underline">30 DAYS.</span></h2>
+        <p class="text-lg font-bold mb-2">Keshav Jha</p>
+        <p class="text-blue-400 mb-8">+91-7982820054 | Keshavjhabca006@gmail.com</p>
+        <div class="flex justify-center space-x-6 text-xl text-slate-500 mb-12">
+            <a href="https://linkedin.com/in/keshavbhardwaj-67b525161" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:Keshavjhabca006@gmail.com" class="hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="text-[10px] text-slate-700 font-bold tracking-widest uppercase">© 2026 Designed for Data Excellence</p>
+    </footer>
+
+</body>
+</html>
